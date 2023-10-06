@@ -22,11 +22,12 @@ const GetUserInfo = () => {
       <input type="text" id="userName" value={name} onChange={handleName} />
       <label htmlFor="userEmail">Email:</label>
       <input type="email" id="userEmail" value={email} onChange={handleEmail}/>
-
+      <div className="output">
       <h4>Current values in store:</h4>
-      <span>Name - {name}</span>
+      <p>Name - {name}</p>
       <br/>
-      <span>Email - {email}</span>
+      <p>Email - {email}</p>
+      </div>
     </div>
   );
 };
